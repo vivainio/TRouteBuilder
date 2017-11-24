@@ -30,3 +30,11 @@ You will be using RouteLinker like so:
             var rel = linker.To<FakeController3>(c => c.ManyVars("", "", 0)).Fill("a", "12", "b", "13", "c", "14");
 
 ```
+
+## Installation
+
+- Add TRouteLinker.cs to your project
+
+## License
+
+MIT
