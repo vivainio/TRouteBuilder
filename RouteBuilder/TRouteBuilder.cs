@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Web.Http;
 
-namespace TrivialRouteBuilder
+namespace TRouteBuilder
 {
     public class RouteFiller
     {

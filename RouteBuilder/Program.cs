@@ -1,8 +1,8 @@
-﻿using TrivialRouteBuilder;
+﻿using TRouteBuilder;
 using System.Web.Http;
 
 
-namespace Test.TrivialRouteBuilder
+namespace Test.TRouteBuilder
 {
 
     [RoutePrefix("hello")]
@@ -33,7 +33,7 @@ namespace Test.TrivialRouteBuilder
         }
     }
 
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
