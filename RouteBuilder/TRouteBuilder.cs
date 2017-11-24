@@ -5,6 +5,7 @@ using System.Web.Http;
 
 namespace TRouteBuilder
 {
+    // expands {foo}/{bar} strings to real values
     public class RouteFiller
     {
         public RouteFiller(string t)
@@ -18,6 +19,7 @@ namespace TRouteBuilder
         public readonly string Template;
     };
 
+    // Use this in dependency injector or whatever to create urls starting with specific base path (e.g. httpcontext.VirtualApplicationRoot)
     public class RelativeUrlBuilder
     {
         private readonly string Root;
@@ -34,6 +36,7 @@ namespace TRouteBuilder
         }
     }
 
+    // The class that does the actual work
     public static class RouteBuilder
     {
         public static RouteFiller ResolveRoute<Klass>(Expression<Action<Klass>> exp)
