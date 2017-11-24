@@ -1,5 +1,5 @@
 # TRouteBuilder
-Generate ASP.NET route links by Expressions
+Generate ASP.NET route links by linq expressions
 
 In ASP.net web api, creating links to api controllers is left as an "excercise for the reader".
 
