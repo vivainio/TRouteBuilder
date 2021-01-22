@@ -8,7 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{E28646
 		paket.dependencies = paket.dependencies
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouteBuilder", "RouteBuilder\RouteBuilder.csproj", "{78B40BEE-FBA6-47E1-B5E0-020C5A78817F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRouteBuilder", "TRouteBuilder\TRouteBuilder.csproj", "{26F4C9D9-1AD9-4809-98F7-D37008E2F59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRouteBuilder.Tests", "TRouteBuilder.Tests\TRouteBuilder.Tests.csproj", "{B534318D-A997-47FA-9320-68E75DFEF7DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +18,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{78B40BEE-FBA6-47E1-B5E0-020C5A78817F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78B40BEE-FBA6-47E1-B5E0-020C5A78817F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78B40BEE-FBA6-47E1-B5E0-020C5A78817F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78B40BEE-FBA6-47E1-B5E0-020C5A78817F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F4C9D9-1AD9-4809-98F7-D37008E2F59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F4C9D9-1AD9-4809-98F7-D37008E2F59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F4C9D9-1AD9-4809-98F7-D37008E2F59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F4C9D9-1AD9-4809-98F7-D37008E2F59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B534318D-A997-47FA-9320-68E75DFEF7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B534318D-A997-47FA-9320-68E75DFEF7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B534318D-A997-47FA-9320-68E75DFEF7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B534318D-A997-47FA-9320-68E75DFEF7DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TRouteBuilder
 {
@@ -41,10 +42,14 @@ namespace TRouteBuilder
         public static RouteFiller ResolveRoute<Klass>(Expression<Action<Klass>> exp)
         {
             var mi = (exp.Body as MethodCallExpression)?.Method;
-            var prefixAttrib = mi.DeclaringType.GetCustomAttribute<RoutePrefixAttribute>()?.Prefix;
-            var routeAttrib = mi.GetCustomAttribute<RouteAttribute>()?.Template;
-            var value = prefixAttrib == null ? routeAttrib : $"{prefixAttrib}/{routeAttrib}";
-            return new RouteFiller(value);
+            var routeAttrib = mi.GetCustomAttribute<RouteAttribute>();
+            if (routeAttrib == null)
+            {
+                throw new ArgumentException("no [Route] attribute");
+
+            }
+            
+            return new RouteFiller(routeAttrib.Template);
         }
 
         public static string Fill(string template, params string[] values)
